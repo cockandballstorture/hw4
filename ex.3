@@ -1,0 +1,8 @@
+from collections import Counter
+import nltk
+r = open('karenina.txt', 'r')
+w = nltk.word_tokenize(r.read())
+for i in range(len(w)):
+    p=Counter(w[i])
+    h={w[i] :p}
+print(h)
